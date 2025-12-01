@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { ChevronDown, ChevronUp, Users, Database, GitPullRequest, ArrowRight, AlertTriangle } from 'lucide-react';
+import { ChevronDown, Database, GitPullRequest, ArrowRight, AlertTriangle } from 'lucide-react';
 import { cn } from '../lib/utils';
 
 interface ContextCardProps {

@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { ChevronDown, Database, GitPullRequest, ArrowRight, AlertTriangle } from 'lucide-react';
+import { ChevronDown, Database, GitPullRequest, AlertTriangle } from 'lucide-react';
 import { cn } from '../lib/utils';
 
 interface ContextCardProps {
@@ -90,39 +90,29 @@ export const TabSynthese = () => {
             {/* Executive Summary Section */}
             <section className="bg-white rounded-2xl p-10 shadow-sm border border-gray-200">
                 <div className="max-w-4xl mx-auto space-y-8">
-                    <div className="text-center space-y-4">
+                    <div className="text-center mb-8">
                         <h2 className="text-3xl font-bold text-gray-900 tracking-tight">Executive Summary</h2>
-                        <p className="text-xl text-gray-600 leading-relaxed max-w-2xl mx-auto">
-                            Votre école connaît une traction remarquable. <br />
-                            <span className="text-[#3C39C4] font-semibold">250 élèves</span> • <span className="text-[#3C39C4] font-semibold">100% distanciel</span>
+                    </div>
+
+                    <div className="prose prose-lg text-gray-600 mx-auto space-y-8">
+                        {/* Situation */}
+                        <p className="leading-relaxed">
+                            <span className="font-bold text-[#3C39C4] uppercase text-sm tracking-wide block mb-2">Situation</span>
+                            FORMEA Santé s'est imposée comme une référence de la formation à distance en diététique avec <span className="font-semibold text-gray-900">250 élèves</span> et une pédagogie 100% spécialisée. Cette réussite repose sur une promesse forte : un accompagnement ultra-personnalisé sur des cycles longs de <span className="font-semibold text-gray-900">2 à 5 ans</span>, soutenu par des outils modernes.
+                        </p>
+
+                        {/* Complication */}
+                        <p className="leading-relaxed">
+                            <span className="font-bold text-[#3C39C4] uppercase text-sm tracking-wide block mb-2">Complication</span>
+                            Ce modèle sur-mesure se heurte aujourd'hui à un mur opérationnel : la gestion administrative complexe (suivi des stages, dossiers de financement, parcours modulables) sature l'équipe dirigeante. Cet épuisement bloque la prise de décision stratégique pour la <span className="font-semibold text-gray-900">rentrée de février</span> et freine le lancement de votre <span className="font-semibold text-gray-900">seconde activité</span>.
+                        </p>
+
+                        {/* Resolution */}
+                        <p className="leading-relaxed">
+                            <span className="font-bold text-[#3C39C4] uppercase text-sm tracking-wide block mb-2">Résolution</span>
+                            Notre intervention d'Audit et Formation structurera vos processus pour automatiser le suivi administratif et redonner de l'autonomie à vos équipes. Cette transformation vise à sécuriser la pérennité du BTS actuel tout en libérant la bande passante nécessaire pour diversifier sereinement votre offre.
                         </p>
                     </div>
-
-                    <div className="prose prose-lg text-gray-600 mx-auto">
-                        <p>
-                            Cependant, ce succès a révélé un <strong>"plafond de verre" opérationnel</strong> : la charge administrative croît linéairement avec le volume d’élèves, saturant votre équipe et vous éloignant de votre cœur de métier (pédagogie et stratégie).
-                        </p>
-                    </div>
-
-                    <div className="bg-gray-50 rounded-xl p-8 border-l-4 border-[#3C39C4]">
-                        <h3 className="font-bold text-gray-900 mb-4 flex items-center gap-2 text-lg">
-                            <ArrowRight className="text-[#3C39C4]" /> Vous faites face à une urgence double :
-                        </h3>
-                        <div className="grid md:grid-cols-2 gap-6">
-                            <div>
-                                <strong className="block text-[#3C39C4] mb-1">Opérationnelle</strong>
-                                <p className="text-sm text-gray-600">Libérer du temps immédiatement pour éviter l'épuisement des équipes.</p>
-                            </div>
-                            <div>
-                                <strong className="block text-[#3C39C4] mb-1">Stratégique</strong>
-                                <p className="text-sm text-gray-600">Trancher avant fin décembre sur le modèle économique futur.</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <p className="text-center text-sm text-gray-500 font-medium pt-2">
-                        Cette proposition détaille une intervention "Commando" visant à auditer, outiller et éclairer cette décision.
-                    </p>
                 </div>
             </section>
 

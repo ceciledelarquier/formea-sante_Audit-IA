@@ -1,4 +1,4 @@
-import { ArrowRight, AlertTriangle, Clock, Users, GraduationCap, Mail } from 'lucide-react';
+import { ArrowRight, AlertTriangle, Clock, Users, GraduationCap, Mail, Wind } from 'lucide-react';
 
 
 interface TabSyntheseProps {
@@ -159,7 +159,7 @@ export const TabSynthese = ({ onNavigate }: TabSyntheseProps) => {
 
                     <div className="bg-gradient-to-br from-blue-50/50 to-[#9CBF9F]/20 p-8 rounded-2xl border border-gray-100">
                         <div className="w-14 h-14 bg-[#9CBF9F]/20 rounded-xl flex items-center justify-center mb-5">
-                            <Users className="text-[#9CBF9F]" size={28} />
+                            <Wind className="text-[#9CBF9F]" size={28} />
                         </div>
                         <h3 className="text-lg font-bold text-gray-900 mb-3">Redonner de l'air à l'équipe</h3>
                         <p className="text-gray-600 leading-relaxed">Vous permettre de vous concentrer sur le pédagogique et le temps de qualité avec les apprenants.</p>

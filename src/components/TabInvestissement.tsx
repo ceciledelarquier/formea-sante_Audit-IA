@@ -6,15 +6,15 @@ export const TabInvestissement = () => {
 
             {/* SECTION INTRO - INVESTISSEMENT */}
             <section className="space-y-6">
-                <div className="border-l-4 border-purple-600 pl-4">
+                <div className="border-l-4 border-[#9CBF9F] pl-4">
                     <h2 className="text-3xl font-bold text-gray-900">Investissement & modalités</h2>
                 </div>
 
-                <div className="bg-gradient-to-br from-purple-100 to-blue-100 border border-purple-100 rounded-3xl p-10 text-center shadow-sm">
+                <div className="bg-gradient-to-br from-[#9CBF9F]/20 to-blue-50 border border-[#9CBF9F]/20 rounded-3xl p-10 text-center shadow-sm">
                     <div className="space-y-4">
-                        <p className="text-6xl font-extrabold text-purple-700">4 500 € HT</p>
+                        <p className="text-6xl font-extrabold text-[#9CBF9F]">4 500 € HT</p>
                         <p className="text-xl font-medium text-gray-700">Forfait global</p>
-                        <div className="inline-block bg-white/80 px-8 py-4 rounded-2xl border-l-4 border-purple-600 mt-6 shadow-sm">
+                        <div className="inline-block bg-white/80 px-8 py-4 rounded-2xl border-l-4 border-[#9CBF9F] mt-6 shadow-sm">
                             <p className="text-gray-800 font-bold text-lg">4 jours d'audit + 1 journée de formation</p>
                         </div>
                     </div>
@@ -81,13 +81,13 @@ export const TabInvestissement = () => {
 
             {/* SECTION - DÉLAIS & CALENDRIER */}
             <section className="space-y-8">
-                <div className="border-l-4 border-purple-600 pl-4">
+                <div className="border-l-4 border-[#9CBF9F] pl-4">
                     <h2 className="text-2xl font-bold text-gray-900">Délais & calendrier</h2>
                 </div>
 
                 <div className="bg-white p-8 rounded-xl border border-gray-200 shadow-sm">
                     <div className="flex items-start gap-4 mb-6">
-                        <Calendar className="text-purple-600 flex-shrink-0" size={32} />
+                        <Calendar className="text-[#9CBF9F] flex-shrink-0" size={32} />
                         <div>
                             <p className="text-xl font-bold text-gray-900 mb-2">Mission finalisée avant le 23 décembre</p>
                             <p className="text-gray-600">Afin de :</p>
@@ -96,11 +96,11 @@ export const TabInvestissement = () => {
 
                     <ul className="space-y-4 ml-4">
                         <li className="flex items-start gap-3 text-gray-700">
-                            <span className="w-2 h-2 rounded-full bg-purple-500 mt-2.5 flex-shrink-0" />
+                            <span className="w-2 h-2 rounded-full bg-[#9CBF9F] mt-2.5 flex-shrink-0" />
                             <span>vous donner une <span className="font-semibold">vision claire des scénarios possibles</span>,</span>
                         </li>
                         <li className="flex items-start gap-3 text-gray-700">
-                            <span className="w-2 h-2 rounded-full bg-purple-500 mt-2.5 flex-shrink-0" />
+                            <span className="w-2 h-2 rounded-full bg-[#9CBF9F] mt-2.5 flex-shrink-0" />
                             <span>vous aider à prendre une <span className="font-semibold">décision éclairée sur la pérennité du BTS longue durée</span> dès la rentrée suivante.</span>
                         </li>
                     </ul>
@@ -151,7 +151,7 @@ export const TabInvestissement = () => {
                 <div className="text-center">
                     <a
                         href="mailto:cdelarquier@gmail.com?subject=Validation%20de%20l%E2%80%99offre%20%E2%80%93%20Investissement%20%26%20modalit%C3%A9s%20FORMEA%20Sant%C3%A9&body=Bonjour%20C%C3%A9cile%2C%0A%0AJe%20vous%20confirme%20ma%20volont%C3%A9%20de%20valider%20l%E2%80%99offre%20pr%C3%A9sent%C3%A9e%20(forfait%20global%204%20500%20%E2%82%AC%20HT)%20pour%20FORMEA%20Sant%C3%A9.%0A%0A%5BPr%C3%A9cisions%20%C3%A0%20compl%C3%A9ter%20ici%5D%0A%0ABien%20%C3%A0%20vous%2C%0A%5BNom%20%2F%20Fonction%5D"
-                        className="inline-flex items-center justify-center gap-3 px-10 py-5 bg-purple-600 text-white rounded-xl font-bold text-xl hover:bg-purple-700 transition-all shadow-lg hover:shadow-xl hover:-translate-y-0.5"
+                        className="inline-flex items-center justify-center gap-3 px-10 py-5 bg-[#9CBF9F] text-white rounded-xl font-bold text-xl hover:bg-[#8ba88e] transition-all shadow-lg hover:shadow-xl hover:-translate-y-0.5"
                     >
                         <Mail size={24} />
                         Valider l'offre

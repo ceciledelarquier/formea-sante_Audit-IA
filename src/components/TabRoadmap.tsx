@@ -14,14 +14,14 @@ export const TabRoadmap = ({ onNavigate }: TabRoadmapProps) => {
                     <h2 className="text-3xl font-bold text-gray-900">Ce que je vous propose</h2>
                 </div>
 
-                <div className="bg-gradient-to-br from-purple-100 to-blue-100 border border-purple-100 rounded-3xl p-10">
+                <div className="bg-gradient-to-br from-[#9CBF9F]/20 to-blue-50 border border-[#9CBF9F]/20 rounded-3xl p-10">
                     <p className="text-2xl font-medium text-gray-900 text-center mb-8">
-                        Un package simple en deux temps : <span className="font-bold text-purple-700">un audit flash + une journée de formation</span>.
+                        Un package simple en deux temps : <span className="font-bold text-[#9CBF9F]">un audit flash + une journée de formation</span>.
                     </p>
-                    <div className="bg-white/80 rounded-2xl p-8 border-l-4 border-purple-600 flex items-start gap-6 shadow-sm">
-                        <Target className="text-purple-600 flex-shrink-0 mt-1" size={32} />
+                    <div className="bg-white/80 rounded-2xl p-8 border-l-4 border-[#9CBF9F] flex items-start gap-6 shadow-sm">
+                        <Target className="text-[#9CBF9F] flex-shrink-0 mt-1" size={32} />
                         <p className="text-lg text-gray-700 leading-relaxed">
-                            <span className="font-bold text-purple-700">Objectif :</span> identifier les <span className="font-semibold">opportunités de gain de temps</span>, prioriser les projets et vous proposer les <span className="font-semibold">outils les plus adaptés</span>.
+                            <span className="font-bold text-[#9CBF9F]">Objectif :</span> identifier les <span className="font-semibold">opportunités de gain de temps</span>, prioriser les projets et vous proposer les <span className="font-semibold">outils les plus adaptés</span>.
                         </p>
                     </div>
                 </div>
@@ -125,8 +125,9 @@ export const TabRoadmap = ({ onNavigate }: TabRoadmapProps) => {
             </section>
 
             {/* SECTION 2: FORMATION */}
+            {/* SECTION 2: FORMATION */}
             <section className="space-y-8">
-                <div className="border-l-4 border-purple-500 pl-4">
+                <div className="border-l-4 border-[#9CBF9F] pl-4">
                     <h2 className="text-2xl font-bold text-gray-900">2) Journée de Formation (2 à 10 personnes)</h2>
                     <p className="text-lg text-gray-600 font-medium mt-2">
                         Objectif : <span className="text-gray-900 font-semibold">maîtriser les fondamentaux de l'IA générative pour pouvoir gagner du temps immédiatement</span>.
@@ -134,33 +135,33 @@ export const TabRoadmap = ({ onNavigate }: TabRoadmapProps) => {
                 </div>
 
                 <div className="bg-white p-8 rounded-xl border border-gray-200 shadow-sm relative">
-                    <span className="absolute top-4 right-4 bg-purple-600 text-white text-xs font-bold px-3 py-1 rounded-full">
+                    <span className="absolute top-4 right-4 bg-[#9CBF9F] text-white text-xs font-bold px-3 py-1 rounded-full">
                         PRÉSENTIEL
                     </span>
                     <p className="text-lg font-bold text-gray-900 mb-6">En une journée, on voit :</p>
 
                     <div className="space-y-6">
-                        <div className="flex gap-4 items-start bg-purple-50/50 p-4 rounded-xl border border-purple-100">
-                            <div className="flex-shrink-0 w-12 h-12 bg-purple-100 rounded-xl flex items-center justify-center">
-                                <Sparkles className="text-purple-600" size={24} />
+                        <div className="flex gap-4 items-start bg-[#9CBF9F]/10 p-4 rounded-xl border border-[#9CBF9F]/20">
+                            <div className="flex-shrink-0 w-12 h-12 bg-[#9CBF9F]/20 rounded-xl flex items-center justify-center">
+                                <Sparkles className="text-[#9CBF9F]" size={24} />
                             </div>
                             <p className="text-gray-700 text-lg pt-2">
                                 <span className="font-semibold">Apprendre à prompter</span> pour gagner en efficience dans ses utilisations de l'IA.
                             </p>
                         </div>
 
-                        <div className="flex gap-4 items-start bg-purple-50/50 p-4 rounded-xl border border-purple-100">
-                            <div className="flex-shrink-0 w-12 h-12 bg-purple-100 rounded-xl flex items-center justify-center">
-                                <Target className="text-purple-600" size={24} />
+                        <div className="flex gap-4 items-start bg-[#9CBF9F]/10 p-4 rounded-xl border border-[#9CBF9F]/20">
+                            <div className="flex-shrink-0 w-12 h-12 bg-[#9CBF9F]/20 rounded-xl flex items-center justify-center">
+                                <Target className="text-[#9CBF9F]" size={24} />
                             </div>
                             <p className="text-gray-700 text-lg pt-2">
                                 <span className="font-semibold">Travailler sur des cas d'usage de votre quotidien</span> pour comprendre où vous pouvez injecter de l'IA.
                             </p>
                         </div>
 
-                        <div className="flex gap-4 items-start bg-purple-50/50 p-4 rounded-xl border border-purple-100">
-                            <div className="flex-shrink-0 w-12 h-12 bg-purple-100 rounded-xl flex items-center justify-center">
-                                <Database className="text-purple-600" size={24} />
+                        <div className="flex gap-4 items-start bg-[#9CBF9F]/10 p-4 rounded-xl border border-[#9CBF9F]/20">
+                            <div className="flex-shrink-0 w-12 h-12 bg-[#9CBF9F]/20 rounded-xl flex items-center justify-center">
+                                <Database className="text-[#9CBF9F]" size={24} />
                             </div>
                             <p className="text-gray-700 text-lg pt-2">
                                 <span className="font-semibold">Connaître les meilleurs outils disponibles</span> en fonction de ce que vous avez à faire : rédiger (visuel et textes), analyser ou chercher des informations.
@@ -168,7 +169,7 @@ export const TabRoadmap = ({ onNavigate }: TabRoadmapProps) => {
                         </div>
                     </div>
 
-                    <div className="mt-8 p-4 bg-purple-50 rounded-lg border-l-4 border-purple-600">
+                    <div className="mt-8 p-4 bg-[#9CBF9F]/10 rounded-lg border-l-4 border-[#9CBF9F]">
                         <p className="text-gray-700 italic">
                             La formation vise à permettre à <span className="font-semibold">toutes et tous de pouvoir comprendre les fondamentaux de l'IA</span> et à commencer à se construire le <span className="font-semibold">toolkit IA qui permet de gagner du temps rapidement</span>.
                         </p>
@@ -218,10 +219,10 @@ export const TabRoadmap = ({ onNavigate }: TabRoadmapProps) => {
                         </div>
                     </div>
 
-                    <div className="bg-gradient-to-br from-purple-50/50 to-violet-50/50 p-8 rounded-2xl border border-purple-100 hover:shadow-md transition-all">
+                    <div className="bg-gradient-to-br from-[#9CBF9F]/20 to-green-50/50 p-8 rounded-2xl border border-[#9CBF9F]/20 hover:shadow-md transition-all">
                         <div className="flex items-start gap-4">
-                            <div className="w-14 h-14 bg-purple-100 rounded-xl flex items-center justify-center flex-shrink-0">
-                                <Sparkles className="text-purple-600" size={28} />
+                            <div className="w-14 h-14 bg-[#9CBF9F]/20 rounded-xl flex items-center justify-center flex-shrink-0">
+                                <Sparkles className="text-[#9CBF9F]" size={28} />
                             </div>
                             <p className="text-gray-700 pt-2 text-lg">
                                 un <span className="font-bold">espace de connaissance et des prompts</span> pour gagner du temps immédiatement.
@@ -253,10 +254,10 @@ export const TabRoadmap = ({ onNavigate }: TabRoadmapProps) => {
                         </li>
                     </ul>
 
-                    <div className="bg-white p-6 rounded-lg border-l-4 border-purple-600">
+                    <div className="bg-white p-6 rounded-lg border-l-4 border-[#9CBF9F]">
                         <p className="text-gray-900 font-medium text-lg italic">
                             L'objectif de ce package, c'est :<br />
-                            <span className="text-purple-700 font-bold not-italic">
+                            <span className="text-[#9CBF9F] font-bold not-italic">
                                 "Vous montrer où vous gagnez du temps, avec quels outils, et comment commencer très concrètement, sans vous rajouter une usine à gaz."
                             </span>
                         </p>
@@ -269,7 +270,7 @@ export const TabRoadmap = ({ onNavigate }: TabRoadmapProps) => {
                 <div className="flex flex-col sm:flex-row justify-center gap-6">
                     <button
                         onClick={() => onNavigate?.('consultante')}
-                        className="group flex items-center justify-center gap-3 px-8 py-4 bg-white border-2 border-purple-600 text-purple-700 rounded-xl font-bold text-lg hover:bg-purple-50 transition-all shadow-sm hover:shadow-md"
+                        className="group flex items-center justify-center gap-3 px-8 py-4 bg-white border-2 border-[#9CBF9F] text-[#9CBF9F] rounded-xl font-bold text-lg hover:bg-green-50 transition-all shadow-sm hover:shadow-md"
                     >
                         <User size={20} />
                         Mon profil
@@ -277,7 +278,7 @@ export const TabRoadmap = ({ onNavigate }: TabRoadmapProps) => {
 
                     <a
                         href="mailto:cdelarquier@gmail.com?subject=Validation%20de%20l%E2%80%99offre%20%E2%80%93%20Audit%20%26%20Formation%20FORMEA%20Sant%C3%A9&body=Bonjour%20C%C3%A9cile%2C%0A%0AJe%20vous%20confirme%20ma%20volont%C3%A9%20de%20valider%20l%E2%80%99offre%20%27Audit%20flash%20%2B%20journ%C3%A9e%20de%20formation%27%20pour%20FORMEA%20Sant%C3%A9.%0A%0A%5BPr%C3%A9cisions%20%C3%A0%20compl%C3%A9ter%20ici%5D%0A%0ABien%20%C3%A0%20vous%2C%0A%5BNom%20%2F%20Fonction%5D"
-                        className="group flex items-center justify-center gap-3 px-8 py-4 bg-purple-600 text-white rounded-xl font-bold text-lg hover:bg-purple-700 transition-all shadow-lg hover:shadow-xl hover:-translate-y-0.5"
+                        className="group flex items-center justify-center gap-3 px-8 py-4 bg-[#9CBF9F] text-white rounded-xl font-bold text-lg hover:bg-[#8ba88e] transition-all shadow-lg hover:shadow-xl hover:-translate-y-0.5"
                     >
                         <Mail size={20} />
                         Valider l'offre

@@ -40,7 +40,7 @@ export const TabConsultante = () => {
             title: "Expertise IA & Coach",
             subtitle: "Formatrice & Coach certifiée",
             description: "Formatrice IA et Coach certifiée. J'accompagne la transformation tech sans oublier l'humain.",
-            colorClass: "bg-purple-50 text-purple-600"
+            colorClass: "bg-[#9CBF9F]/20 text-[#9CBF9F]"
         }
     ];
 
@@ -62,7 +62,7 @@ export const TabConsultante = () => {
     return (
         <div className="p-8 max-w-6xl mx-auto space-y-12">
             {/* Profile Section */}
-            <section className="bg-gradient-to-br from-purple-100 to-blue-100 rounded-3xl p-10 shadow-sm border border-purple-100">
+            <section className="bg-gradient-to-br from-[#9CBF9F]/20 to-blue-50 rounded-3xl p-10 shadow-sm border border-[#9CBF9F]/20">
                 <div className="flex flex-col md:flex-row items-center gap-10">
                     <div className="flex-shrink-0">
                         <div className="w-48 h-48 rounded-full overflow-hidden border-4 border-white shadow-lg">
@@ -76,10 +76,10 @@ export const TabConsultante = () => {
                     <div className="flex-1 text-center md:text-left space-y-6">
                         <div>
                             <h2 className="text-3xl font-bold text-gray-900 mb-2">Cécile de Larquier</h2>
-                            <p className="text-xl text-purple-700 font-medium">Consultante Stratégie & Transformation</p>
+                            <p className="text-xl text-[#9CBF9F] font-medium">Consultante Stratégie & Transformation</p>
                         </div>
 
-                        <div className="bg-white/80 p-6 rounded-2xl border-l-4 border-purple-600 shadow-sm">
+                        <div className="bg-white/80 p-6 rounded-2xl border-l-4 border-[#9CBF9F] shadow-sm">
                             <p className="text-gray-800 text-lg leading-relaxed font-medium italic">
                                 "L'IA est une transformation avant tout métier : comprendre les processus, identifier les goulots d'étranglement, soutenir les processus avec les bons outils."
                             </p>
@@ -100,9 +100,9 @@ export const TabConsultante = () => {
                     {philosophyBlocks.map((block, index) => {
                         const Icon = block.icon;
                         return (
-                            <div key={index} className="bg-gradient-to-br from-blue-50/50 to-purple-50/50 rounded-2xl p-8 border border-gray-100 hover:shadow-md transition-all">
+                            <div key={index} className="bg-gradient-to-br from-blue-50/50 to-[#9CBF9F]/20 rounded-2xl p-8 border border-gray-100 hover:shadow-md transition-all">
                                 <div className="w-14 h-14 bg-white rounded-xl flex items-center justify-center mb-5 mx-auto shadow-sm">
-                                    <Icon className="text-purple-600" size={28} />
+                                    <Icon className="text-[#9CBF9F]" size={28} />
                                 </div>
                                 <h4 className="text-lg font-bold text-gray-900 mb-3">{block.title}</h4>
                                 <p className="text-gray-600 leading-relaxed">

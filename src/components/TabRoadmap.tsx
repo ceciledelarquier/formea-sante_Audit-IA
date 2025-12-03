@@ -10,17 +10,22 @@ export const TabRoadmap = () => {
                     <h2 className="text-3xl font-bold text-gray-900">Ce que je vous propose</h2>
                 </div>
 
-                <div className="bg-blue-50 border border-blue-100 rounded-xl p-8 text-center">
-                    <p className="text-2xl font-medium text-gray-900">
+                <div className="bg-blue-50 border border-blue-100 rounded-xl p-8">
+                    <p className="text-2xl font-medium text-gray-900 text-center mb-6">
                         Un package simple en deux temps : <span className="font-bold text-[#3C39C4]">un audit flash + une journée de formation</span>.
                     </p>
+                    <div className="bg-white rounded-lg p-6 border-l-4 border-[#3C39C4]">
+                        <p className="text-lg text-gray-700">
+                            <span className="font-bold text-[#3C39C4]">Objectif :</span> identifier les opportunités de gain de temps, prioriser les projets et vous proposer les outils les plus adaptés.
+                        </p>
+                    </div>
                 </div>
             </section>
 
             {/* SECTION 1: AUDIT FLASH */}
             <section className="space-y-8">
                 <div className="border-l-4 border-green-500 pl-4">
-                    <h2 className="text-2xl font-bold text-gray-900">1) Audit Flash (4 jours au total)</h2>
+                    <h2 className="text-2xl font-bold text-gray-900">1) Audit Flash (4-5 jours au total)</h2>
                     <p className="text-lg text-gray-600 font-medium mt-2">
                         Objectif : <span className="text-gray-900">savoir où vous perdez du temps et combien vous pouvez en récupérer.</span>
                     </p>
@@ -34,9 +39,21 @@ export const TabRoadmap = () => {
                             <span className="text-green-700 font-bold text-lg">1</span>
                         </div>
                         <div className="flex-1 bg-white p-6 rounded-xl border border-gray-200 shadow-sm">
-                            <p className="text-gray-700 text-lg">
-                                <span className="font-bold">1h de kick-off en visio</span> pour cadrer les priorités.
-                            </p>
+                            <p className="text-gray-700 text-lg font-bold mb-3">1 journée sur place :</p>
+                            <ul className="space-y-2 text-gray-600">
+                                <li className="flex items-start gap-2">
+                                    <span className="w-1.5 h-1.5 rounded-full bg-green-500 mt-2 flex-shrink-0" />
+                                    <span>Interviews individuelles avec les 2 collaboratrices</span>
+                                </li>
+                                <li className="flex items-start gap-2">
+                                    <span className="w-1.5 h-1.5 rounded-full bg-green-500 mt-2 flex-shrink-0" />
+                                    <span>Accès aux outils et documents de travail</span>
+                                </li>
+                                <li className="flex items-start gap-2">
+                                    <span className="w-1.5 h-1.5 rounded-full bg-green-500 mt-2 flex-shrink-0" />
+                                    <span>Observation du quotidien ("vis ma vie") pour voir où ça coince vraiment</span>
+                                </li>
+                            </ul>
                         </div>
                     </div>
 
@@ -46,19 +63,7 @@ export const TabRoadmap = () => {
                             <span className="text-green-700 font-bold text-lg">2</span>
                         </div>
                         <div className="flex-1 bg-white p-6 rounded-xl border border-gray-200 shadow-sm">
-                            <p className="text-gray-700 text-lg">
-                                <span className="font-bold">1 journée sur place</span> : je vous suis dans votre quotidien ("vis ma vie") pour voir où ça coince vraiment.
-                            </p>
-                        </div>
-                    </div>
-
-                    {/* Step 3 */}
-                    <div className="flex gap-6 items-start">
-                        <div className="flex-shrink-0 w-12 h-12 bg-green-100 rounded-full flex items-center justify-center">
-                            <span className="text-green-700 font-bold text-lg">3</span>
-                        </div>
-                        <div className="flex-1 bg-white p-6 rounded-xl border border-gray-200 shadow-sm">
-                            <p className="text-gray-700 text-lg font-bold mb-4">2,5 jours de travail en coulisses :</p>
+                            <p className="text-gray-700 text-lg font-bold mb-4">2 à 3 jours de travail en coulisses :</p>
                             <ul className="space-y-3">
                                 <li className="flex items-start gap-3 text-gray-600">
                                     <CheckCircle2 className="text-green-500 flex-shrink-0 mt-0.5" size={20} />
@@ -66,11 +71,15 @@ export const TabRoadmap = () => {
                                 </li>
                                 <li className="flex items-start gap-3 text-gray-600">
                                     <CheckCircle2 className="text-green-500 flex-shrink-0 mt-0.5" size={20} />
-                                    <span>sélection des solutions réalistes,</span>
+                                    <span>identifications des outils d'IA les plus efficaces,</span>
                                 </li>
                                 <li className="flex items-start gap-3 text-gray-600">
                                     <CheckCircle2 className="text-green-500 flex-shrink-0 mt-0.5" size={20} />
-                                    <span>construction d'une banque de prompts FORMEA prête à l'emploi.</span>
+                                    <span>construction d'une banque de prompts FORMEA prête à l'emploi,</span>
+                                </li>
+                                <li className="flex items-start gap-3 text-gray-600">
+                                    <CheckCircle2 className="text-green-500 flex-shrink-0 mt-0.5" size={20} />
+                                    <span>catégorisation des cas d'usage / processus en 3 : quick win (vous pouvez les mettre en place immédiatement), petites automatisations (et quel outil sera le plus adapté pour vous - réalisable à moyen terme), et développement d'outil sur mesure.</span>
                                 </li>
                             </ul>
                         </div>
@@ -86,15 +95,19 @@ export const TabRoadmap = () => {
                     <ul className="space-y-3">
                         <li className="flex items-start gap-3 text-gray-700">
                             <span className="w-2 h-2 rounded-full bg-green-500 mt-2 flex-shrink-0" />
-                            <span>cartographie des flux ("qui fait quoi, où ça bloque"),</span>
+                            <span>un espace Notion structuré,</span>
                         </li>
                         <li className="flex items-start gap-3 text-gray-700">
                             <span className="w-2 h-2 rounded-full bg-green-500 mt-2 flex-shrink-0" />
-                            <span>liste priorisée des tâches à automatiser,</span>
+                            <span>une banque de prompts adaptée à FORMEA,</span>
                         </li>
                         <li className="flex items-start gap-3 text-gray-700">
                             <span className="w-2 h-2 rounded-full bg-green-500 mt-2 flex-shrink-0" />
-                            <span>roadmap 90 jours avec les actions concrètes à mener.</span>
+                            <span>accès à tous les documents de formation,</span>
+                        </li>
+                        <li className="flex items-start gap-3 text-gray-700">
+                            <span className="w-2 h-2 rounded-full bg-green-500 mt-2 flex-shrink-0" />
+                            <span>liste des meilleurs outils d'IA sur le marché.</span>
                         </li>
                     </ul>
                 </div>

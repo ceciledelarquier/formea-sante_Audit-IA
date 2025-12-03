@@ -1,62 +1,163 @@
-
-import { Check } from 'lucide-react';
+import { Mail, CheckCircle2, Calendar, CreditCard, Info } from 'lucide-react';
 
 export const TabInvestissement = () => {
     return (
-        <div className="p-8 flex justify-center">
-            <div className="bg-white rounded-2xl shadow-lg border border-gray-200 max-w-lg w-full overflow-hidden">
-                <div className="bg-[#3C39C4] p-8 text-center text-white">
-                    <h3 className="text-xl font-medium opacity-90 mb-2">Investissement Forfaitaire</h3>
-                    <div className="flex items-baseline justify-center gap-1">
-                        <span className="text-5xl font-bold">4 500</span>
-                        <span className="text-2xl">€ HT</span>
-                    </div>
-                    <p className="mt-4 text-blue-100 text-sm">Mission de 5 jours • Clé en main</p>
+        <div className="p-8 max-w-6xl mx-auto space-y-16">
+
+            {/* SECTION INTRO - INVESTISSEMENT */}
+            <section className="space-y-6">
+                <div className="border-l-4 border-purple-600 pl-4">
+                    <h2 className="text-3xl font-bold text-gray-900">7. Investissement & modalités</h2>
                 </div>
 
-                <div className="p-8">
-                    <ul className="space-y-4 mb-8">
-                        <li className="flex items-start gap-3">
-                            <div className="p-1 bg-green-100 rounded-full mt-0.5">
-                                <Check size={16} className="text-green-600" />
-                            </div>
-                            <span className="text-gray-700">Audit complet & Cartographie des flux</span>
-                        </li>
-                        <li className="flex items-start gap-3">
-                            <div className="p-1 bg-green-100 rounded-full mt-0.5">
-                                <Check size={16} className="text-green-600" />
-                            </div>
-                            <span className="text-gray-700">Mise en place Stack Technique (Make/Notion)</span>
-                        </li>
-                        <li className="flex items-start gap-3">
-                            <div className="p-1 bg-green-100 rounded-full mt-0.5">
-                                <Check size={16} className="text-green-600" />
-                            </div>
-                            <span className="text-gray-700">Configuration Assistant IA (Support Élèves)</span>
-                        </li>
-                        <li className="flex items-start gap-3">
-                            <div className="p-1 bg-green-100 rounded-full mt-0.5">
-                                <Check size={16} className="text-green-600" />
-                            </div>
-                            <span className="text-gray-700">Formation & Transfert de compétences</span>
-                        </li>
-                        <li className="flex items-start gap-3">
-                            <div className="p-1 bg-green-100 rounded-full mt-0.5">
-                                <Check size={16} className="text-green-600" />
-                            </div>
-                            <span className="text-gray-700">Livrables stratégiques & Roadmap 2025</span>
-                        </li>
-                    </ul>
+                <div className="bg-gradient-to-br from-purple-50 to-blue-50 border-2 border-purple-200 rounded-2xl p-10 text-center shadow-lg">
+                    <div className="space-y-3">
+                        <p className="text-5xl font-extrabold text-purple-700">4 500 € HT</p>
+                        <p className="text-xl font-medium text-gray-700">Forfait global</p>
+                        <div className="inline-block bg-white px-6 py-3 rounded-full border border-purple-200 mt-4">
+                            <p className="text-gray-700 font-medium">Mission clé en main – 5 à 6 jours d'intervention</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
 
-                    <button className="w-full bg-[#3C39C4] hover:bg-blue-800 text-white font-bold py-4 rounded-xl transition-colors shadow-md hover:shadow-lg">
-                        Valider la mission
-                    </button>
+            {/* SECTION - CE FORFAIT COMPREND */}
+            <section className="space-y-8">
+                <div className="border-l-4 border-green-500 pl-4">
+                    <h2 className="text-2xl font-bold text-gray-900">Ce forfait comprend</h2>
+                </div>
 
-                    <p className="text-xs text-gray-500 text-center mt-6">
-                        Inclus : Accès à la base de connaissance Notion à vie + Support email 1 mois post-mission.
+                <div className="grid md:grid-cols-2 gap-4">
+                    <div className="bg-white p-6 rounded-xl border border-gray-200 shadow-sm hover:shadow-md transition-shadow">
+                        <div className="flex items-start gap-3">
+                            <CheckCircle2 className="text-green-500 flex-shrink-0 mt-1" size={20} />
+                            <p className="text-gray-700 font-medium">Formation d'acculturation des équipes à l'IA</p>
+                        </div>
+                    </div>
+
+                    <div className="bg-white p-6 rounded-xl border border-gray-200 shadow-sm hover:shadow-md transition-shadow">
+                        <div className="flex items-start gap-3">
+                            <CheckCircle2 className="text-green-500 flex-shrink-0 mt-1" size={20} />
+                            <p className="text-gray-700 font-medium">Audit & cartographie des processus sur le périmètre administratif</p>
+                        </div>
+                    </div>
+
+                    <div className="bg-white p-6 rounded-xl border border-gray-200 shadow-sm hover:shadow-md transition-shadow">
+                        <div className="flex items-start gap-3">
+                            <CheckCircle2 className="text-green-500 flex-shrink-0 mt-1" size={20} />
+                            <p className="text-gray-700 font-medium">Identification des outils IA adaptés à vos besoins</p>
+                        </div>
+                    </div>
+
+                    <div className="bg-white p-6 rounded-xl border border-gray-200 shadow-sm hover:shadow-md transition-shadow">
+                        <div className="flex items-start gap-3">
+                            <CheckCircle2 className="text-green-500 flex-shrink-0 mt-1" size={20} />
+                            <p className="text-gray-700 font-medium">Analyse de l'implémentabilité des processus IA</p>
+                        </div>
+                    </div>
+
+                    <div className="bg-white p-6 rounded-xl border border-gray-200 shadow-sm hover:shadow-md transition-shadow">
+                        <div className="flex items-start gap-3">
+                            <CheckCircle2 className="text-green-500 flex-shrink-0 mt-1" size={20} />
+                            <p className="text-gray-700 font-medium">Rédaction d'une banque de prompts prête à l'emploi</p>
+                        </div>
+                    </div>
+
+                    <div className="bg-white p-6 rounded-xl border border-gray-200 shadow-sm hover:shadow-md transition-shadow">
+                        <div className="flex items-start gap-3">
+                            <CheckCircle2 className="text-green-500 flex-shrink-0 mt-1" size={20} />
+                            <p className="text-gray-700 font-medium">Livrables stratégiques & Roadmap 2025 pour déployer les actions priorisées</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div className="bg-blue-50 border border-blue-200 rounded-xl p-6 flex items-start gap-4">
+                    <Info className="text-blue-600 flex-shrink-0 mt-0.5" size={24} />
+                    <p className="text-blue-900 font-medium">
+                        📝 Les frais de déplacement sont en supplément, facturés sur justificatif.
                     </p>
                 </div>
-            </div>
+            </section>
+
+            {/* SECTION - MODALITÉS DE PAIEMENT */}
+            <section className="space-y-8">
+                <div className="border-l-4 border-orange-500 pl-4">
+                    <h2 className="text-2xl font-bold text-gray-900">Modalités de paiement</h2>
+                </div>
+
+                <div className="grid md:grid-cols-2 gap-6">
+                    <div className="bg-white p-8 rounded-xl border-2 border-orange-200 shadow-sm">
+                        <div className="flex items-center gap-4 mb-4">
+                            <div className="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center">
+                                <CreditCard className="text-orange-600" size={28} />
+                            </div>
+                            <div>
+                                <p className="text-3xl font-bold text-orange-600">30%</p>
+                                <p className="text-sm text-gray-500 font-medium">Avant le lancement</p>
+                            </div>
+                        </div>
+                        <p className="text-gray-700 font-medium">
+                            30 % du montant de la mission à régler avant le lancement.
+                        </p>
+                    </div>
+
+                    <div className="bg-white p-8 rounded-xl border-2 border-orange-200 shadow-sm">
+                        <div className="flex items-center gap-4 mb-4">
+                            <div className="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center">
+                                <CreditCard className="text-orange-600" size={28} />
+                            </div>
+                            <div>
+                                <p className="text-3xl font-bold text-orange-600">70%</p>
+                                <p className="text-sm text-gray-500 font-medium">Dans les 30 jours</p>
+                            </div>
+                        </div>
+                        <p className="text-gray-700 font-medium">
+                            70 % restants à régler dans les 30 jours suivant la fin de la mission.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            {/* SECTION - DÉLAIS & CALENDRIER */}
+            <section className="space-y-8">
+                <div className="border-l-4 border-purple-600 pl-4">
+                    <h2 className="text-2xl font-bold text-gray-900">Délais & calendrier</h2>
+                </div>
+
+                <div className="bg-white p-8 rounded-xl border border-gray-200 shadow-sm">
+                    <div className="flex items-start gap-4 mb-6">
+                        <Calendar className="text-purple-600 flex-shrink-0" size={32} />
+                        <div>
+                            <p className="text-xl font-bold text-gray-900 mb-2">Mission finalisée avant le 23 décembre</p>
+                            <p className="text-gray-600">Afin de :</p>
+                        </div>
+                    </div>
+
+                    <ul className="space-y-4 ml-4">
+                        <li className="flex items-start gap-3 text-gray-700">
+                            <span className="w-2 h-2 rounded-full bg-purple-500 mt-2.5 flex-shrink-0" />
+                            <span>vous donner une <span className="font-semibold">vision claire des scénarios possibles</span>,</span>
+                        </li>
+                        <li className="flex items-start gap-3 text-gray-700">
+                            <span className="w-2 h-2 rounded-full bg-purple-500 mt-2.5 flex-shrink-0" />
+                            <span>vous aider à prendre une <span className="font-semibold">décision éclairée sur la pérennité du BTS longue durée</span> dès la rentrée suivante.</span>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            {/* CTA SECTION */}
+            <section className="pt-12 pb-8 border-t border-gray-200">
+                <div className="text-center">
+                    <a
+                        href="mailto:cdelarquier@gmail.com?subject=Validation%20de%20l%E2%80%99offre%20%E2%80%93%20Investissement%20%26%20modalit%C3%A9s%20FORMEA%20Sant%C3%A9&body=Bonjour%20C%C3%A9cile%2C%0A%0AJe%20vous%20confirme%20ma%20volont%C3%A9%20de%20valider%20l%E2%80%99offre%20pr%C3%A9sent%C3%A9e%20(forfait%20global%204%20500%20%E2%82%AC%20HT)%20pour%20FORMEA%20Sant%C3%A9.%0A%0A%5BPr%C3%A9cisions%20%C3%A0%20compl%C3%A9ter%20ici%5D%0A%0ABien%20%C3%A0%20vous%2C%0A%5BNom%20%2F%20Fonction%5D"
+                        className="inline-flex items-center justify-center gap-3 px-10 py-5 bg-purple-600 text-white rounded-xl font-bold text-xl hover:bg-purple-700 transition-all shadow-lg hover:shadow-xl hover:-translate-y-0.5"
+                    >
+                        <Mail size={24} />
+                        Valider l'offre
+                    </a>
+                </div>
+            </section>
         </div>
     );
 };

@@ -15,7 +15,7 @@ function App() {
   const tabs = [
     { id: 'synthese', label: 'Synthèse', icon: LayoutDashboard },
     { id: 'enjeux', label: 'Enjeux', icon: AlertCircle },
-    { id: 'roadmap', label: 'Roadmap', icon: Map },
+    { id: 'roadmap', label: 'Méthode', icon: Map },
     { id: 'consultante', label: 'Consultante', icon: User },
     { id: 'investissement', label: 'Investissement', icon: Euro },
   ];
@@ -51,7 +51,7 @@ function App() {
 
           {/* Tab Content */}
           <div className="min-h-[400px]">
-            {activeTab === 'synthese' && <TabSynthese />}
+            {activeTab === 'synthese' && <TabSynthese onNavigate={setActiveTab} />}
             {activeTab === 'enjeux' && <TabEnjeux />}
             {activeTab === 'roadmap' && <TabRoadmap />}
             {activeTab === 'consultante' && <TabConsultante />}
